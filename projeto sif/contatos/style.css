@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    padding-top: 5vh;
+    background-image: url('os-aplicativos-da-saude-farmacia-farmaceutico-farmaceutica-ictq.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+  }
+
+
+/* Formatação da section Menu ul/li */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+/* formatação do cabeçalho */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* formatação do logo */
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+
+/* formatar a lista não ordenada */
+header ul{
+    position: relative;
+    display: flex;
+}
+
+/* formatar o estilo tirando os ticks usando none */
+header ul li{
+    list-style: none;
+
+}
+
+/* formatação da lista do menu */
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 700;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.banner {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+
+.banner p {
+    font-family: var(--font-secundary);
+    color: rgb(5, 5, 5);
+    font-size: 1.7rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}

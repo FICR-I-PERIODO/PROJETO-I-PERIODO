@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+/* Formatação da section Menu ul/li */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    background-image: url('img/farmacia-itumbiara_-1-1-1024x576.jpg');
+    
+}
+
+/* formatação do cabeçalho */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* formatação do logo */
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+
+/* formatar a lista não ordenada */
+header ul{
+    position: relative;
+    display: flex;
+}
+
+/* formatar o estilo tirando os ticks usando none */
+header ul li{
+    list-style: none;
+
+}
+
+/* formatação da lista do menu */
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 700;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+/* formatção do carrosel */
+
+.carrosel{
+    width: 1400px;
+    height: 350px;
+    overflow: hidden;
+    margin: 70px auto;
+    box-shadow: 5px 5px 10px rgba(231, 5, 5, 0.7);
+}
+
+.carrosel ul{
+    display:flex;
+    list-style: none;
+    width: 1300px;
+    height: 340px;
+}
+
+.carrosel li{
+    position: relative;
+    animation: slide 30s infinite;
+
+}
+
+@keyframes slide {
+      0%{left:0px}
+     
+    20%{left:-1300px}
+    30%{left:-1300px}
+    40%{left:-2600px}
+    50%{left:-2600px}
+    60%{left:-3900px}
+    70%{left:-3900px}
+    80%{left:-5200px}
+    90%{left:-5200px}
+    100%{left:-0px}    
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  body {
+    
+    background-image: url('img/farmacia-itumbiara_-1-1-1024x576.jpg');
+   
+  }
+
+div.container{
+    position: absolute;
+    bottom: -10%;
+   
+}
+ 
+
+.row .coluna{
+    float: left;
+    width: 25%;
+    padding: 70px;
+    
+}
+
+
+.imagem .coluna{
+    float: left;
+    width: 18%;
+    padding: 70px;
+    margin: 10px 10px 10px 0;
+}
+
